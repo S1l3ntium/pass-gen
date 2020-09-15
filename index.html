@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Генератор паролей</title>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="http://thecode.local/wp-content/uploads/2019/05/js-md5.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container" margin: auto;">
+      <h1>Генератор паролей</h1>
+      <p>Какие символы включать в пароль:</p>
+      <ul class="password__generate">
+         <li><input id="arr_num" type="checkbox" /> Цифры</li>
+         <li><input id="arr_en" type="checkbox" /> Английский строчные буквы</li>
+         <li><input id="arr_EN" type="checkbox" /> Английский заглавные буквы</li>
+         <li><input id="arr_symb" type="checkbox" /> Спецсимволы</li>
+      </ul>
+      <p>Количество символов в пароле: <input id="passLenght" type="number" step="1" min="4" max="20" value="7" /></p>
+      <p>Сгенерированный пароль: <span id="result"></span></p>
+      <p><button id="pass_start">Сгенерировать пароль</button></p>
+   </div>
+   <script src="main.js"></script>
+</body>
+
+</html>
